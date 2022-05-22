@@ -1,0 +1,130 @@
+.footer {
+  background: #2F324B;
+  color: #fff;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+}
+
+.footer__logo-text {
+  width: 127px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.footer__logo_position_center {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__autor {
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.footer__tel {
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+}
+
+.footer__call-me {
+  font-size: 23.85px;
+  line-height: 28px;
+  margin-bottom: 3px;
+}
+
+.footer__call-me-text {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .footer__wrapper {
+    padding: 0 30px;
+  }
+
+  .footer__logo-text {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .footer__call-me {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .footer__call-me-text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 780px) {
+  .footer {
+    padding: 25px 0 0 0;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+  }
+
+  .footer__logo {
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
+
+  .footer__logo-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer__autor {
+    order: 3;
+    padding-top: 15px;
+    height: 47px;
+    width: 100%;
+    gap: 0;
+    text-align: center;
+    background-color: #2A2C3F;
+  }
+
+  .footer__call-me,
+  .footer__call-me-text {
+    display: none;
+  }
+
+  .footer__tel {
+    margin-right: 15px;
+  }
+
+  .footer__tel:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(../footer/img/header-tel-logo-320.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 15px;
+    top: 3px;
+    order: 1;
+  }
+
+
+}
