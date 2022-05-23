@@ -35,13 +35,16 @@
 }
 
 .feedback__legend {
-  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 47px;
 }
 
 .feedback__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   width: 423px;
   margin: 0 auto 50px auto;
 }
@@ -69,6 +72,12 @@
 
 .feedback__button {
   margin-bottom: 50px;
+  padding: 12px 38px;
+}
+
+.feedback__discription {
+  font-size: 20px;
+  line-height: 23px;
 }
 
 @media (max-width: 1024px) {
@@ -77,8 +86,12 @@
   }
 
   .feedback__legend {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .feedback__list {
+    width: 377px;
   }
 
   .feedback__input {
@@ -91,10 +104,12 @@
   }
 
   .feedback__button {
+    padding-left: 38px;
+    padding-right: 38px;
     margin-bottom: 30px;
   }
 
-  .discription {
+  .feedback__discription {
     font-size: 17px;
     line-height: 20px;
   }
@@ -109,12 +124,13 @@
   .feedback__legend {
     font-size: 12px;
     line-height: 14px;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
   }
 
   .feedback__list {
     width: 100%;
-    gap: 15px;
+    gap: 10px;
+    margin-bottom: 43px;
   }
 
   .feedback__input {
@@ -126,7 +142,12 @@
     line-height: 16px;
   }
 
-  .discription__feedback {
+  .feedback__button {
+    padding: 9px 26px;
+    margin-bottom: 30px;
+  }
+
+  .feedback__discription {
     font-size: 11px;
     line-height: 13px;
   }

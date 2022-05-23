@@ -72,12 +72,12 @@
   font-size: 52px;
   line-height: 61px;
   color: rgba(255, 255, 255, 0.86);
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .header__discription {
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 90px;
+  margin-bottom: 87px;
   width: 960px;
 }
 
@@ -89,6 +89,7 @@
 
   .header__top {
     justify-content: space-between;
+    align-content: flex-start;
   }
 
   .header__logo {
@@ -100,6 +101,9 @@
     font-size: 21px;
     line-height: 25px;
     margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .header__call-me-text {
@@ -120,7 +124,7 @@
 
   .header__discription {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 24px;
     margin-bottom: 60px;
     width: 754px;
   }
@@ -170,7 +174,7 @@
     width: 290px;
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 
   .header__discription {
