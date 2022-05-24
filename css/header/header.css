@@ -37,22 +37,22 @@
   align-items: center;
 }
 
-.header__logo {
+.logo {
   width: 68px;
   height: 68px;
 }
 
-.header__tel {
-  color: #fff;
-  text-align: center;
-  font-style: normal;
-}
-
-.header__call-me {
+.tel-block {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  position: relative;
+}
+
+.call-btn {
   color: #fff;
   font-size: 23.85px;
   line-height: 28px;
@@ -60,17 +60,17 @@
   border: none;
 }
 
-.header__call-me-text {
+.call-me {
   font-size: 16px;
   line-height: 19px;
   position: relative;
 }
 
-.header__call-me-text::after {
+.call-me::after {
   content: "";
   position: absolute;
   top: 19px;
-  right: 0;
+  right: 38px;
   width: 131.98px;
   border-bottom: 1px solid #fff;
   cursor: pointer;
@@ -85,6 +85,7 @@
 }
 
 .header__title {
+  text-align: center;
   font-weight: 900;
   font-size: 52px;
   line-height: 61px;
@@ -109,12 +110,16 @@
     align-content: flex-start;
   }
 
-  .header__logo {
+  .logo {
     width: 60px;
     height: 60px;
   }
 
-  .header__call-me {
+.tel-block {
+  gap: 6px;
+}
+
+  .call-btn {
     font-size: 21px;
     line-height: 25px;
     display: flex;
@@ -122,12 +127,12 @@
     gap: 6px;
   }
 
-  .header__call-me-text {
+  .call-me {
     font-size: 13px;
     line-height: 15px;
   }
 
-  .header__call-me-text::after{
+  .call-me::after{
     width: 106px;
   }
 
@@ -161,12 +166,12 @@
     background-position: left -63px top 0px;
   }
 
-  .header__logo {
+  .logo {
     width: 30px;
     height: 30px;
   }
 
-  .header__tel_position_header:before {
+  .tel-block:before {
     content: "";
     position: absolute;
     width: 24px;
@@ -174,20 +179,20 @@
     background: url(./img/Phone-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    right: 15px;
-    top: 18px;
+    right: 0;
+    top: -12px;
   }
 
-  .header__call-me {
+  .call-btn {
     display: none;
   }
 
-  .header__call-me-text {
+  .call-me {
     display: none;
   }
 
   .header__bottom {
-    padding-top: 65px;
+    padding-top: 66px;
   }
 
   .header__title {
@@ -201,15 +206,10 @@
     width: 290px;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 52px;
+    margin-bottom: 51px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-  }
-
-  .paragraf__autor {
-    padding: 15px 80px;
-    background: #2A2C3F;
   }
 }

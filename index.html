@@ -20,22 +20,23 @@
   <header class="header">
     <div class="container">
       <div class="header__top">
-        <a href="#" class="header__logo">
-          <img class="header__logo-icon" src="./css/header/img/header-logo.svg" alt="Логотип компании">
+        <a href="#" class="logo">
+          <img class="logo-icon" src="./css/header/img/header-logo.svg" alt="Логотип компании">
         </a>
-        <address class="header__tel header__tel_position_header">
-          <button type="reset" class="header__call-me">+7 (962) 556 - 1234
-            <p class="header__call-me-text">Перезвоните мне</p>
-          </button>
-        </address>
+        <div class="tel-block">
+          <a href="tel:89625561234" class="call-btn">
+            +7 (962) 556 - 1234
+          </a>
+          <a href="#" class="call-me">Перезвоните мне</a>
+        </div>
       </div>
       <div class="header__bottom">
-        <h1 class="header__title title">Заголовок c уникальным торговым предложение по системе 4U</h1>
+        <h1 class="header__title">Заголовок c уникальным торговым предложение по системе 4U</h1>
         <p class="header__discription discription">
           Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
           несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.
         </p>
-        <button type="reset" class="button">Подробнее</button>
+        <button type="button" class="button">Подробнее</button>
       </div>
     </div>
   </header>
@@ -98,10 +99,10 @@
               </li>
             </ul>
 
-            <button class="button feedback__button">позвоните мне</button>
+            <button type="submit" class="button feedback__button">позвоните мне</button>
 
             <p class="discription feedback__discription">
-              Я даю своё <a class="feedback__link">согласие</a> на обработку моих персональных данных.
+              Я даю своё <a href="#" class="feedback__link">согласие</a> на обработку моих персональных данных.
           </fieldset>
         </form>
       </div>
@@ -109,24 +110,25 @@
   </main>
 
   <footer class="footer">
-    <div class="header__wrapper">
-      <div class="header__block">
-        <a href="#" class="header__logo">
-          <img class="footer__logo-icon" src="./css/header/img/header-logo.svg" alt="Логотип компании">
+    <div class="footer__wrapper">
+      <div class="footer__block">
+        <a href="#" class="logo">
+          <img class="logo-icon" src="./css/header/img/header-logo.svg" alt="Логотип компании">
         </a>
-        <p class="header__text">
+        <p class="footer__text">
           © 2022 XXXcompany.
           Все права защищены.
         </p>
       </div>
-      <p class="header__autor">
+      <p class="footer__autor">
         Сделано Ивановым Иваном
       </p>
-      <address class="header__tel header__tel_position_footer">
-        <a class="header__call-me" href="tel:89625561234">+7 (962) 556 - 1234
-          <p class="header__call-me-text">Перезвоните мне</p>
+      <div class="tel-block">
+        <a href="tel:89625561234" class="call-btn">
+          +7 (962) 556 - 1234
         </a>
-      </address>
+        <a href="#" class="call-me">Перезвоните мне</a>
+      </div>
     </div>
   </footer>
 

@@ -4,7 +4,7 @@
   color: #fff;
 }
 
-.header__wrapper {
+.footer__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -15,21 +15,21 @@
   margin: 0 auto;
 }
 
-.header__block {
+.footer__block {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 19px;
 }
 
-.header__text {
+.footer__text {
   width: 127px;
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
 }
 
-.header__autor {
+.footer__autor {
   font-size: 12px;
   line-height: 17px;
 }
@@ -39,7 +39,7 @@
     padding: 37px 0;
   }
 
-  .header__wrapper {
+  .footer__wrapper {
     padding: 0 30px;
   }
 }
@@ -49,7 +49,7 @@
     padding: 23px 0 0 0;
   }
 
-  .header__wrapper {
+  .footer__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,30 +57,13 @@
     padding: 0 15px;
   }
 
-  .header__text {
+  .footer__text {
     font-size: 8px;
     line-height: 11px;
     width: 87.3px;
   }
 
-  .header__tel_position_footer {
-    position: relative;
-  }
-
-  .header__tel_position_footer:before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background: url(../footer/img/header-tel-logo-320.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    right: 0;
-    top: -12px;
-    order: 1;
-  }
-
-  .header__autor {
+  .footer__autor {
     margin: 25px -15px 0 -15px;
     width: 780px;
     padding-top: 15px;
