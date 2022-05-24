@@ -20,13 +20,13 @@
   <header class="header">
     <div class="container">
       <div class="header__top">
-        <div class="header__logo">
+        <a href="#" class="header__logo">
           <img class="header__logo-icon" src="./css/header/img/header-logo.svg" alt="Логотип компании">
-        </div>
-        <address class="header__tel">
-          <a class="header__call-me" href="tel:89625561234">+7 (962) 556 - 1234
+        </a>
+        <address class="header__tel header__tel_position_header">
+          <button type="reset" class="header__call-me">+7 (962) 556 - 1234
             <p class="header__call-me-text">Перезвоните мне</p>
-          </a>
+          </button>
         </address>
       </div>
       <div class="header__bottom">
@@ -35,7 +35,7 @@
           Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
           несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.
         </p>
-        <button class="button">Подробнее</button>
+        <button type="reset" class="button">Подробнее</button>
       </div>
     </div>
   </header>
@@ -45,29 +45,29 @@
       <div class="container">
         <div class="advantages__wrapper">
           <h2 class="title advantages__title">Уникальный заголовок для преимущества компании</h2>
-          <h3 class="title advantages__subtitle">О нас</h3>
-            <p class="discription advantages__discription">
-              Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
-              осмысленного текста рыбы на русском языке, а начинающему оратору отточить.
-            </p>
-            <ul class="advantages__list">
-              <li class="advantages__item">
-                <p class="advantages__paragraf">Первое целевое преимущество</p>
+          <p class="advantages__subtitle">О нас</p>
+          <p class="discription advantages__discription">
+            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+            осмысленного текста рыбы на русском языке, а начинающему оратору отточить.
+          </p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <p class="advantages__paragraf">Первое целевое преимущество</p>
 
-              </li>
-              <li class="advantages__item">
-                <p class="advantages__paragraf">Второе целевое преимущество</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__paragraf">Второе целевое преимущество</p>
 
-              </li>
-              <li class="advantages__item">
-                <p class="advantages__paragraf">Третье целевое преимущество</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__paragraf">Третье целевое преимущество</p>
 
-              </li>
-              <li class="advantages__item">
-                <p class="advantages__paragraf">Четвертое целевое преимущество</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__paragraf">Четвертое целевое преимущество</p>
 
-              </li>
-            </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -83,17 +83,17 @@
             <ul class="feedback__list">
               <li class="feedback__item">
                 <label class="feedback__label">
-                  <input class="feedback__input" type="text" placeholder="Ваше имя">
+                  <input class="feedback__input" type="text" name="user-name" placeholder="Ваше имя">
                 </label>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label">
-                  <input class="feedback__input" type="number" placeholder="Телефон">
+                  <input class="feedback__input" type="number" name="user-tel" placeholder="Телефон">
                 </label>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label">
-                  <input class="feedback__input" type="text" placeholder="E-mail">
+                  <input class="feedback__input" type="text" name="user-email" placeholder="E-mail">
                 </label>
               </li>
             </ul>
@@ -109,23 +109,25 @@
   </main>
 
   <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__logo footer__logo_position_center">
+    <div class="header__wrapper">
+      <div class="header__block">
+        <a href="#" class="header__logo">
           <img class="footer__logo-icon" src="./css/header/img/header-logo.svg" alt="Логотип компании">
-          <p class="footer__logo-text">
-            © 2022 XXXcompany.
-            Все права защищены.
-          </p>
-        </div>
-        <p class="footer__autor">
-          Сделано Ивановым Иваном
+        </a>
+        <p class="header__text">
+          © 2022 XXXcompany.
+          Все права защищены.
         </p>
-        <address class="footer__tel">
-          <a class="footer__call-me" href="tel:89625561234">+7 (962) 556 - 1234
-            <p class="footer__call-me-text">Перезвоните мне</p>
-          </a>
-        </address>
       </div>
+      <p class="header__autor">
+        Сделано Ивановым Иваном
+      </p>
+      <address class="header__tel header__tel_position_footer">
+        <a class="header__call-me" href="tel:89625561234">+7 (962) 556 - 1234
+          <p class="header__call-me-text">Перезвоните мне</p>
+        </a>
+      </address>
+    </div>
   </footer>
 
 </body>

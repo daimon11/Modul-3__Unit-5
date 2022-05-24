@@ -1,10 +1,10 @@
 .footer {
-  padding: 45px 0;
+  padding: 43px 0;
   background: #2F324B;
   color: #fff;
 }
 
-.footer__wrapper {
+.header__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -15,117 +15,59 @@
   margin: 0 auto;
 }
 
-.footer__logo-text {
+.header__block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 19px;
+}
+
+.header__text {
   width: 127px;
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
 }
 
-.footer__logo_position_center {
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer__autor {
+.header__autor {
   font-size: 12px;
   line-height: 17px;
 }
 
-.footer__tel {
-  color: #fff;
-  text-align: center;
-  font-style: normal;
-}
-
-.footer__call-me {
-  font-size: 23.85px;
-  line-height: 28px;
-  margin-bottom: 3px;
-}
-
-.footer__call-me-text {
-  font-size: 16px;
-  line-height: 19px;
-  text-decoration: underline;
-}
-
 @media (max-width: 1024px) {
   .footer {
-    padding: 20px 0;
+    padding: 37px 0;
   }
 
-  .footer__wrapper {
+  .header__wrapper {
     padding: 0 30px;
-  }
-
-  .footer__logo-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .footer__logo-text {
-    font-weight: 500;
-    font-size: 12px;
-  }
-
-  .footer__call-me {
-    font-size: 21px;
-    line-height: 25px;
-  }
-
-  .footer__call-me-text {
-    font-size: 13px;
-    line-height: 15px;
   }
 }
 
 @media (max-width: 780px) {
   .footer {
-    padding: 20px 0 0 0;
+    padding: 23px 0 0 0;
   }
 
-  .footer__wrapper {
+  .header__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    padding: 0;
+    padding: 0 15px;
   }
 
-  .footer__logo {
-    margin-left: 15px;
-    margin-bottom: 25px;
+  .header__text {
+    font-size: 8px;
+    line-height: 11px;
+    width: 87.3px;
   }
 
-  .footer__logo-icon {
-    width: 30px;
-    height: 30px;
+  .header__tel_position_footer {
+    position: relative;
   }
 
-  .footer__autor {
-    order: 3;
-    padding-top: 15px;
-    height: 47px;
-    width: 100%;
-    gap: 0;
-    text-align: center;
-    background-color: #2A2C3F;
-  }
-
-  .footer__call-me,
-  .footer__call-me-text {
-    display: none;
-  }
-
-  .footer__tel {
-    margin-right: 15px;
-  }
-
-  .footer__tel:before {
+  .header__tel_position_footer:before {
     content: "";
     position: absolute;
     width: 24px;
@@ -133,10 +75,18 @@
     background: url(../footer/img/header-tel-logo-320.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    right: 15px;
-    top: 3px;
+    right: 0;
+    top: -12px;
     order: 1;
   }
 
-
+  .header__autor {
+    margin: 25px -15px 0 -15px;
+    width: 780px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #2A2C3F;
+    text-align: center;
+    order: 2;
+  }
 }

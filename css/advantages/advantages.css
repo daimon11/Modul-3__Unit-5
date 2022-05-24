@@ -10,7 +10,7 @@
   line-height: 26px;
   text-align: center;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .advantages__subtitle::before {
@@ -18,7 +18,7 @@
   position: absolute;
   display: inline-block;
   width: 43px;
-  border: 2px solid #383A4C;
+  border-bottom: 2px solid #383A4C;
   top: 12px;
   right: 80px;
 }
@@ -28,7 +28,7 @@
   position: absolute;
   display: inline-block;
   width: 43px;
-  border: 2px solid #383A4C;
+  border-bottom: 2px solid #383A4C;
   top: 12px;
   left: 80px;
 }
@@ -38,7 +38,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .advantages__list {
@@ -61,7 +61,7 @@
   counter-increment: num;
   display: inline-block;
   position: absolute;
-  padding-top: 32px;
+  padding-top: 36px;
   width: 122px;
   height: 122px;
   background: #23C7EC;
@@ -74,7 +74,7 @@
 }
 
 .advantages__paragraf {
-  padding-top: 138px;
+  padding-top: 136px;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
@@ -83,30 +83,27 @@
 
 @media (max-width: 1024px) {
   .advantages__title {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .advantages__subtitle {
     text-align: center;
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
-  .advantages__subtitle::before {
-    top: 11px;
-    right: 77px;
-  }
-
+  .advantages__subtitle::before,
   .advantages__subtitle::after {
-    top: 11px;
-    left: 77px;
+    top: 10px;
+    right: 77px;
   }
 
   .advantages__discription {
     font-size: 16px;
     line-height: 23px;
     width: 666px;
+    margin-bottom: 59px;
   }
 
   .advantages__list {
@@ -117,7 +114,8 @@
   .advantages__item:before {
     width: 104px;
     height: 104px;
-    padding-top: 22px;
+    font-size: 52px;
+    padding-top: 26px;
   }
 
   .advantages__item {
@@ -130,7 +128,7 @@
     font-size: 18px;
     line-height: 25px;
   }
-  
+
 }
 
 @media (max-width: 780px) {
@@ -146,21 +144,22 @@
   .advantages__subtitle {
     font-size: 16px;
     line-height: 19px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+  }
+
+  .advantages__subtitle::before,
+  .advantages__subtitle::after {
+    top: 11px;
+    width: 20px;
+    border: 1px solid #383A4C;
   }
 
   .advantages__subtitle::before {
-    top: 9px;
-    right: 77px;
-    width: 20px;
-    border: 1px solid #383A4C;
+    right: 68px;
   }
 
   .advantages__subtitle::after {
-    top: 9px;
-    left: 77px;
-    width: 20px;
-    border: 1px solid #383A4C;
+    left: 68px;
   }
 
   .advantages__discription {
@@ -177,6 +176,7 @@
   }
 
   .advantages__paragraf {
+    padding-top: 130px;
     width: 180px;
     font-size: 18px;
     line-height: 25px;

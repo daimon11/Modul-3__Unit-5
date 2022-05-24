@@ -31,7 +31,6 @@ img {
 
 button {
   padding: 0;
-  box-shadow: 0px 2.69725px 16.8578px rgba(21, 169, 203, 0.3);
   cursor: pointer;
 }
 
@@ -116,7 +115,7 @@ fieldset {
 */
 
 section {
-  padding: 70px 0;
+  padding: 71px 0;
 }
 
 header,
@@ -179,6 +178,7 @@ footer {
   background-color: #15A9CB;
   border: 1px solid #15A9CB;
   border-radius: 50px;
+  box-shadow: 0px 2.69725px 16.8578px rgba(21, 169, 203, 0.3);
 }
 
 .button::first-letter {

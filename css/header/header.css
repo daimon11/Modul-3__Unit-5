@@ -9,6 +9,7 @@
   width: 100%;
   height: 100%;
   background-image: url(./img/header-office-bg.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   top: 0;
@@ -48,15 +49,31 @@
 }
 
 .header__call-me {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  color: #fff;
   font-size: 23.85px;
   line-height: 28px;
-  margin-bottom: 3px;
+  background: transparent;
+  border: none;
 }
 
 .header__call-me-text {
   font-size: 16px;
   line-height: 19px;
-  text-decoration: underline;
+  position: relative;
+}
+
+.header__call-me-text::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 0;
+  width: 131.98px;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
 }
 
 .header__bottom {
@@ -100,10 +117,9 @@
   .header__call-me {
     font-size: 21px;
     line-height: 25px;
-    margin-bottom: 4px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
   }
 
   .header__call-me-text {
@@ -111,8 +127,12 @@
     line-height: 15px;
   }
 
+  .header__call-me-text::after{
+    width: 106px;
+  }
+
   .header__bottom {
-    padding-top: 70px;
+    padding-top: 71px;
   }
 
   .header__title {
@@ -124,21 +144,21 @@
 
   .header__discription {
     font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 60px;
+    line-height: 25px;
+    margin-bottom: 57px;
     width: 754px;
   }
 }
 
 @media (max-width: 780px) {
   .header {
-    padding-top: 15px;
+    padding-top: 16px;
     padding-bottom: 65px;
     flex-wrap: wrap;
   }
 
   .header::before {
-    background-position: left -85px top 45px;
+    background-position: left -63px top 0px;
   }
 
   .header__logo {
@@ -146,7 +166,7 @@
     height: 30px;
   }
 
-  .header__tel:before {
+  .header__tel_position_header:before {
     content: "";
     position: absolute;
     width: 24px;
@@ -154,7 +174,7 @@
     background: url(./img/Phone-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    right: 20px;
+    right: 15px;
     top: 18px;
   }
 
@@ -181,7 +201,7 @@
     width: 290px;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
