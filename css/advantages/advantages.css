@@ -81,7 +81,18 @@
   text-align: center;
 }
 
+@media (max-width: 1280px) {
+  .advantages__list {
+    padding: 0 46px;
+    gap: 50px;
+  }
+}
+
 @media (max-width: 1024px) {
+.advantages {
+  padding-top: 70px;
+}
+
   .advantages__title {
     margin-bottom: 24px;
   }
@@ -123,7 +134,8 @@
   }
 
   .advantages__paragraf {
-    padding-top: 130px;
+    padding-top: 129px;
+    padding-right: 4px;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
@@ -131,6 +143,16 @@
 
 }
 
+@media (max-width: 962px) {
+    .advantages__list {
+      padding: 0 46px;
+      gap: 60px;
+  }
+
+  .advantages__item {
+    width: 120px;
+  }
+}
 @media (max-width: 780px) {
   .advantages {
     padding-top: 30px;

@@ -1,5 +1,5 @@
 .footer {
-  padding: 43px 0;
+  padding: 43px 0 45px 0;
   background: #2F324B;
   color: #fff;
 }
@@ -32,15 +32,20 @@
 .footer__autor {
   font-size: 12px;
   line-height: 17px;
+  padding-right: 15px;
 }
 
 @media (max-width: 1024px) {
   .footer {
-    padding: 37px 0;
+    padding: 37px 0 50px 0;
   }
 
   .footer__wrapper {
     padding: 0 30px;
+  }
+
+  .footer__autor {
+    padding-right: 22px;
   }
 }
 
@@ -65,6 +70,7 @@
 
   .footer__autor {
     margin: 25px -15px 0 -15px;
+    padding-left: 20px;
     width: 780px;
     padding-top: 15px;
     padding-bottom: 15px;

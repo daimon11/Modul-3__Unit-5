@@ -6,6 +6,7 @@
 
 .feedback__title {
   margin-bottom: 17px;
+  padding-right: 25px;
 }
 
 .feedback::before {
@@ -27,7 +28,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(47, 50, 75, 0.85);
-  background-size: contain;
+  background-size: cover;
   top: 0;
   left: 0;
   z-index: -1;
@@ -82,20 +83,23 @@
 @media (max-width: 1024px) {
   .feedback {
     padding-bottom: 57px;
+    padding-top: 72px;
   }
 
   .feedback__title {
     margin-bottom: 16px;
+    padding-right: 9px;
   }
 
   .feedback::before {
-    background-position: bottom -9px right -1px;
+    background-position: center;
   }
 
   .feedback__legend {
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 47px;
+    padding-left: 17px;
   }
 
   .feedback__list {
@@ -130,18 +134,16 @@
     padding-bottom: 30px;
   }
 
-  .feedback::before {
-    background-position: bottom 0px right -196px;
-  }
-
   .feedback__title {
     margin-bottom: 13px;
+    padding-right: 2px;
   }
 
   .feedback__legend {
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 30px;
+    padding-left: 0;
   }
 
   .feedback__list {
@@ -152,6 +154,7 @@
 
   .feedback__input {
     padding: 6px 18px;
+    width: 290px;
   }
 
   .feedback__input[placeholder] {
@@ -169,3 +172,10 @@
     line-height: 13px;
   }
 }
+
+@media (max-width: 320px) {
+  .feedback::before {
+    background-position: bottom 0px right -196px;
+  }
+ }
+
