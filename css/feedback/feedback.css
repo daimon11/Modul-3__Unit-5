@@ -98,7 +98,7 @@
   .feedback__legend {
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 47px;
+    margin-bottom: 48px;
     padding-left: 17px;
   }
 
@@ -128,7 +128,7 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 700px) {
   .feedback {
     padding-top: 33px;
     padding-bottom: 30px;
@@ -177,5 +177,5 @@
   .feedback::before {
     background-position: bottom 0px right -196px;
   }
- }
+}
 
